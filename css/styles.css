@@ -1,0 +1,62 @@
+body {
+    background-color: var(--backgrond-color);
+    color: var(--main-color);
+    font-family: raleway-own;
+    overflow-x: hidden;
+}
+
+.container {
+    padding: 0 3vw;
+}
+
+.main-header {
+    height: 100vh;
+}
+
+.hero {
+    width: calc(var(--index) * 36);
+    position: absolute;
+    left: 36vw;
+    top: 10vh;
+    z-index: -1;
+}
+
+.main-title {
+    font-size: calc(var(--index) * 8);
+    position: absolute;
+    width: min-content;
+    bottom: 10vh;
+    line-height: .9;
+}
+
+.gallery {
+    display: flex;
+}
+
+.gallery > * {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.gallery__item {
+    max-width: calc(var(--index) * 21);
+    margin-bottom: var(--gallery-gap);
+    max-height: 180vh;
+    border-radius: 8px;
+}
+
+.gallery__left {
+    margin-top: calc(var(--gallery-gap) * 1.75);
+}
+
+.gallery__right .gallery__item {
+    margin: 0;
+    margin-top: var(--gallery-gap);
+}
+
+.text-block {
+    color: var(--color-text);
+    position: relative;
+}

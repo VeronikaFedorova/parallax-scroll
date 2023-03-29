@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: outfit-own;
+}
+
+:root {
+    --index: calc(1vw + 1vh);
+    --header-color: #f4efec;
+    --text-color: #cdc6c3;
+    --backgrond-color: #1d1c1c;
+    --main-color: #fafafa;
+    --gallery-gap: calc(var(--index) * 10);
+}
+
+@font-face {
+    font-family: raleway-own;
+    src: url(../fonts/raleway-regular.woff2);
+}
+
+@font-face {
+    font-family: outfit-own;
+    src: url(../fonts/outfit-regular.woff2);
+}
