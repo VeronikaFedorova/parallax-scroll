@@ -1,3 +1,11 @@
+/* will-change*/
+.content,
+.hero,
+.main-header,
+.gallery > * {
+    will-change: transform;
+}
+
 body {
     background-color: var(--backgrond-color);
     color: var(--main-color);
@@ -59,4 +67,15 @@ body {
 .text-block {
     color: var(--color-text);
     position: relative;
+}
+
+.text-block__header {
+    font-size: 2rem;
+    line-height: 2.4rem;
+    color: var(--color-header);
+    margin-bottom: 1.5rem;
+}
+
+.text-block__paragraph {
+    line-height: 1.75;
 }
